@@ -1,0 +1,109 @@
+/* ===== Reset & dasar ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  color: #334155;
+  line-height: 1.6;
+  background: #fff;
+}
+a { text-decoration: none; }
+a:focus-visible, .ramdani_btn:focus-visible { outline: 3px solid #f59e0b; outline-offset: 2px; }
+.ramdani_container { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+/* ===== Header / Navbar ===== */
+#ramdani_header {
+  position: sticky; top: 0; z-index: 10;
+  background: #fff; border-bottom: 1px solid #e2e8f0;
+}
+.ramdani_nav_wrap { display: flex; align-items: center; justify-content: space-between; height: 62px; }
+.ramdani_logo { font-size: 1.25rem; font-weight: 600; color: #0f172a; display: flex; align-items: center; gap: 8px; }
+.ramdani_logo b { color: #1d4ed8; }
+.ramdani_logo_icon { color: #1d4ed8; font-family: monospace; font-weight: 700; }
+.ramdani_menu { display: flex; gap: 28px; }
+.ramdani_menu a { color: #0f172a; font-size: .95rem; padding: 4px 0; border-bottom: 2px solid transparent; }
+.ramdani_menu a:hover, .ramdani_menu a.ramdani_aktif { color: #1d4ed8; border-bottom-color: #1d4ed8; }
+
+/* ===== Hero ===== */
+#ramdani_home { background: linear-gradient(120deg, #eef4ff 0%, #dbe8ff 100%); }
+.ramdani_hero_wrap { display: flex; align-items: center; justify-content: space-between; gap: 32px; padding-top: 48px; padding-bottom: 48px; }
+.ramdani_hero_teks { flex: 1 1 50%; }
+.ramdani_sapa { font-size: 1.5rem; color: #0f172a; }
+#ramdani_home h1 { font-size: 3rem; line-height: 1.1; color: #0f172a; margin: 4px 0 8px; }
+#ramdani_home h1 span { color: #1d4ed8; }
+.ramdani_peran { font-size: 1.1rem; color: #475569; margin-bottom: 12px; }
+.ramdani_deskripsi { max-width: 46ch; margin-bottom: 22px; }
+.ramdani_tombol_wrap { display: flex; gap: 12px; flex-wrap: wrap; }
+.ramdani_btn { padding: 10px 22px; border-radius: 8px; font-weight: 600; font-size: .95rem; border: 2px solid #1d4ed8; }
+.ramdani_btn_utama { background: #1d4ed8; color: #fff; }
+.ramdani_btn_utama:hover { background: #1e40af; }
+.ramdani_btn_outline { background: #fff; color: #1d4ed8; }
+.ramdani_btn_outline:hover { background: #eff6ff; }
+.ramdani_hero_gambar { flex: 1 1 45%; }
+.ramdani_hero_gambar svg { width: 100%; height: auto; display: block; }
+
+/* ===== Blok umum ===== */
+.ramdani_blok { padding: 40px 0 16px; }
+.ramdani_blok_kecil { padding-top: 20px; }
+.ramdani_judul { font-size: 1.7rem; color: #0f172a; margin-bottom: 14px; }
+.ramdani_judul::after { content: ""; display: block; width: 52px; height: 3px; background: #1d4ed8; margin-top: 4px; }
+
+/* ===== About ===== */
+.ramdani_about_wrap { display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; }
+.ramdani_about_teks { flex: 1 1 55%; }
+.ramdani_about_teks p { max-width: 52ch; margin-bottom: 14px; }
+.ramdani_info { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: .9rem; }
+.ramdani_foto_wrap { flex: 0 0 260px; height: 190px; border-radius: 10px; overflow: hidden; background: #b50d12; }
+.ramdani_foto_wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; display: block; }
+
+/* ===== Skills ===== */
+.ramdani_skill_grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+.ramdani_skill {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 18px; background: #f8fafc;
+  border: 1px solid #e2e8f0; border-radius: 8px; font-size: .9rem;
+}
+.ramdani_skill i {
+  font-style: normal; font-weight: 700; font-size: .75rem; color: #fff;
+  width: 28px; height: 28px; border-radius: 6px;
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+
+/* ===== Projects ===== */
+.ramdani_proyek_grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; padding-bottom: 36px; }
+.ramdani_proyek { border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #fff; padding-bottom: 10px; }
+.ramdani_thumb { height: 100px; display: flex; align-items: center; justify-content: center; font-size: 2.4rem; margin-bottom: 8px; }
+.ramdani_thumb1 { background: linear-gradient(135deg, #dbeafe, #bfdbfe); }
+.ramdani_thumb2 { background: linear-gradient(135deg, #bbf7d0, #4ade80); }
+.ramdani_thumb3 { background: linear-gradient(135deg, #bae6fd, #7dd3fc); }
+.ramdani_proyek h3 { font-size: .9rem; color: #0f172a; padding: 0 12px; }
+.ramdani_proyek p { font-size: .78rem; padding: 0 12px; line-height: 1.4; }
+.ramdani_proyek a { display: inline-block; margin: 6px 12px 0; font-size: .78rem; font-weight: 600; color: #1d4ed8; }
+.ramdani_proyek a:hover { text-decoration: underline; }
+
+/* ===== Footer ===== */
+#ramdani_footer { background: #0f1b3d; color: #cbd5e1; padding: 14px 0 8px; font-size: .85rem; }
+.ramdani_footer_atas { display: flex; align-items: center; gap: 36px; flex-wrap: wrap; }
+.ramdani_footer_brand b, .ramdani_footer_brand span { font-size: 1.05rem; color: #fff; }
+.ramdani_footer_brand span { color: #60a5fa; font-weight: 700; }
+.ramdani_footer_brand small { display: block; font-size: .72rem; color: #94a3b8; }
+.ramdani_footer_kontak { display: flex; gap: 24px; flex-wrap: wrap; padding-left: 28px; border-left: 1px solid #334155; }
+.ramdani_copy { max-width: 1080px; margin: 8px auto 0; padding: 8px 24px 0; border-top: 1px solid #1e2a50; font-size: .72rem; color: #94a3b8; }
+
+/* ===== Responsif ===== */
+@media (max-width: 900px) {
+  .ramdani_skill_grid { grid-template-columns: repeat(2, 1fr); }
+  .ramdani_proyek_grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 680px) {
+  .ramdani_hero_wrap, .ramdani_about_wrap { flex-direction: column; }
+  .ramdani_foto_wrap { flex: none; width: 100%; height: 240px; }
+  #ramdani_home h1 { font-size: 2.5rem; }
+  .ramdani_menu { gap: 14px; }
+  .ramdani_footer_kontak { padding-left: 0; border-left: 0; }
+}
+@media (max-width: 440px) {
+  .ramdani_logo { font-size: 1rem; }
+  .ramdani_menu { gap: 10px; font-size: .85rem; }
+  .ramdani_proyek_grid { grid-template-columns: 1fr; }
+}
